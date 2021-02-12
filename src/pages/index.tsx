@@ -1,9 +1,6 @@
 import React from "react"
+import styles from "./index.module.scss"
 
 export default function Home() {
-  return (
-    <div style={{ color: `purple`, fontFamily: `Bree Serif` }}>
-      Hello world!
-    </div>
-  )
+  return <div className={styles.main}>Hello world!</div>
 }

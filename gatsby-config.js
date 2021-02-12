@@ -17,11 +17,8 @@ module.exports = {
         display: 'swap'
       }
     },
-    {
-      resolve: `gatsby-plugin-typescript`
-    },
-    {
-      resolve: `gatsby-plugin-tslint`
-    }
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-tslint`
   ],
 }
