@@ -1,6 +1,20 @@
-import React from "react"
-import styles from "./index.module.scss"
+import React from "react";
+import Timeline from "../components/Timeline/Timeline";
+import { EventType } from "../components/TimelineEvent/TimelineEvent";
+import styles from "./index.module.scss";
 
 export default function Home() {
-  return <div className={styles.main}>Hello world!</div>
+  return (
+    <Timeline
+      events={[
+        {
+          id: "123",
+          title: "test",
+          description: <p>test <a>link</a></p>,
+          date: new Date(),
+          type: EventType.COMMUNITY,
+        },
+      ]}
+    />
+  );
 }

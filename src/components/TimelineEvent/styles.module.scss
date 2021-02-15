@@ -1,0 +1,5 @@
+.eventHeader {
+  &:before {
+    content: attr(event-icon);
+  }
+}
