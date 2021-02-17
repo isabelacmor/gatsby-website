@@ -20,8 +20,13 @@ export interface TimelineEventItem {
 
 const getIconFromEventType = (type: EventType): string => {
   switch (type) {
+    case EventType.SPEAKING:
+      return "📢";
     case EventType.NEW:
       return "✨";
+    case EventType.SCHOOL:
+      return "👩‍🎓";
+    case EventType.COMMUNITY:
     default:
       return "👭";
   }
@@ -31,15 +36,17 @@ export default function TimelineEvent(props: TimelineEventItem) {
   const { title, description, date, icon, type } = props;
 
   return (
-    <div>
-      <span>{moment(date).format("MMM YYYY")}</span>
+    <div className={styles.timelineEventContainer}>
+      <h1>{moment(date).format("MMM YYYY")}</h1>
       <h2
         event-icon={icon ?? getIconFromEventType(type)}
         className={styles.eventHeader}
       >
         {title}
       </h2>
-      {description}
+      <div className={styles.descriptionContainer}>
+        {description}
+      </div>
     </div>
   );
 }

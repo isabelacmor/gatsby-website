@@ -1,0 +1,10 @@
+.TimelineContainer {
+  display: grid;
+  grid-template-areas: 'filter'
+                       'timeline';
+}
+
+.TimelineEventsContainer {
+  grid-area: timeline;
+  padding: 2em 2em 1em 2em;
+}

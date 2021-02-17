@@ -12,7 +12,7 @@ module.exports = {
       options: {
         fonts: [
           `Bree Serif`,
-          `Open Sans`
+          `Open Sans\:300,400,500`
         ],
         display: 'swap'
       }
