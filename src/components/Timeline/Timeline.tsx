@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Filter, { FilterOption } from "../Filter/Filter";
 import TimelineEvent, {
   EventType,
@@ -14,10 +14,10 @@ export default function Timeline(props: TimelineProps) {
   const { events } = props;
   const [ filteredEvents, setFilteredEvents ] = useState(events);
   const allFilterOptions = [
-    { title: '👩‍🎓 Education', type: EventType.SCHOOL, checked: true }, 
-    { title: '📢 Speaking', type: EventType.SPEAKING, checked: true },
     { title: '✨ Key events', type: EventType.NEW, checked: true },
-    { title: '👭 Community', type: EventType.COMMUNITY, checked: true }
+    { title: '📢 Speaking', type: EventType.SPEAKING, checked: true },
+    { title: '👭 Community', type: EventType.COMMUNITY, checked: true },
+    { title: '👩‍🎓 Education', type: EventType.SCHOOL, checked: true }, 
   ];
 
   const handleFilterUpdate = (filterOptions: FilterOption[]) => {

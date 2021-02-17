@@ -2,9 +2,12 @@
   display: grid;
   grid-template-areas: 'filter'
                        'timeline';
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: 4% 6% 20px 6%;
 }
 
 .TimelineEventsContainer {
   grid-area: timeline;
-  padding: 2em 2em 1em 2em;
+  height: 100%;
+  overflow-y: auto;
 }

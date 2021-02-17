@@ -3,4 +3,13 @@ $body-font-family: "Open Sans";
 
 .homeContainer {
   font-family: $body-font-family;
+  height: 100vh;
+  margin: -8px; // offset body margin
+
+  display: grid;
+  grid-template-areas:
+  'nav'
+  'main';
+  grid-template-columns: 100vw;
+  grid-template-rows: auto minmax(0, 1fr);
 }

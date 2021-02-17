@@ -1,0 +1,80 @@
+.headerContainer {
+    border-bottom: 1px #eee solid;
+    padding: 6% 6% 4% 6%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    color: #444;
+
+    .bioContainer {
+        height: 100%;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .followContainer {
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            color: #ccc;
+            transition: color 500ms;
+            -webkit-transition: color 500ms;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            text-decoration: none;
+    
+            h1 {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 0.785rem;
+                color: #323758;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 0;
+            }
+    
+            &:last-of-type {
+                margin-right: 0;
+            }
+    
+            &:hover {
+                color: #00cdcd6e;
+                transition: color 500ms;
+                -webkit-transition: color 500ms;
+            }
+        }
+    }
+
+    h1 {
+        font-family: "Bree Serif";
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    img {
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+    }
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 725px) {
+    .headerContainer {
+      flex-direction: column;
+      align-items: center;
+
+      .bioContainer {
+          margin-top: 30px;
+          padding: 0;
+      }
+    }
+  }
