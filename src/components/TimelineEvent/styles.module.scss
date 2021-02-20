@@ -40,5 +40,15 @@
     padding-left: 2em;
     font-weight: 300;
     margin-left: 12px;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: #00cdcd;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
