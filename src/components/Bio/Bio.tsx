@@ -8,7 +8,8 @@ export default function Bio() {
         <img src={me} alt="Isabela's headshot" />
         <div className={styles.bioContainer}>
             <h1>Isabela Moreira</h1>
-            <p>Senior frontend engineer in Seattle creating experiences with code and design</p>
+            <p>Senior frontend engineer and mechanical keyboard lover in Seattle creating experiences with code and design</p>
+            <p>Current ⌨ <a href="https://www.cftkb.com/shop/mysterium-tkl-diy-keyboard-kit">Mysterium with KAT Milkshake</a></p>
             <div className={styles.followContainer}>
                 <a href="https://twitter.com/isabelacmor" rel="me" target="_blank" aria-label="Open Isabela's Twitter">
                     <h1>Twitter</h1>
