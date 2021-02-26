@@ -4,6 +4,7 @@ $body-font-family: "Open Sans";
 .homeContainer {
   font-family: $body-font-family;
   height: 100vh;
+  min-height: 850px; // allow scrolling so that timeline is available to be viewed and scrolled
   margin: -8px; // offset body margin
 
   display: grid;
