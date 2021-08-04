@@ -22,10 +22,6 @@ export default function Timeline(props: TimelineProps) {
 
   const handleFilterUpdate = (filterOptions: FilterOption[]) => {
     setFilteredEvents(events.filter((event: TimelineEventItem) => {
-      console.log("event", event);
-      console.log("filter option", filterOptions.find((option: FilterOption) => option.type === event.type));
-      
-      console.log("should include event?", filterOptions.find((option: FilterOption) => option.type === event.type)?.checked);
       return filterOptions.find((option: FilterOption) => option.type === event.type)?.checked;
     }));
   }

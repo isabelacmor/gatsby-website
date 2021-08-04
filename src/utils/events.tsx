@@ -6,6 +6,27 @@ import moment from "moment";
 export const EVENTS: TimelineEventItem[] = [
     {
         id: uuidv4(),
+        title: 'Mentor in Microsoft LEAP program',
+        description: <p>Mentor apprentice in LEAP program as they learn technical skills to transition into a software development career</p>, 
+        date: moment("2021-07-01").toDate(),
+        type: EventType.COMMUNITY,
+    },
+    {
+        id: uuidv4(),
+        title: 'Joined Microsoft',
+        description: <p>So nice, I was hired twice 😊 I lead a team of awesome frontend engineers building Bing At Work, Microsoft's enterprise search.</p>, 
+        date: moment("2020-12-01").toDate(),
+        type: EventType.NEW,
+    },
+    {
+        id: uuidv4(),
+        title: 'Left CedarAI',
+        description: <p>After a growing my knowledge in design and leading a frontend team, I decided to move back to a large company where I could narrow my scope of work and direct my full attention to frontend and leading a great team.</p>, 
+        date: moment("2020-10-01").toDate(),
+        type: EventType.NEW,
+    },
+    {
+        id: uuidv4(),
         title: 'Spoke at ct\'webdev',
         description: <><p>Keynoted Day 2 <a href="https://github.com/isabelacmor/talks/blob/master/the-way-we-think-about-change.md" target="_blank">"The Way We Think About Change"</a>, with <a href="https://github.com/isabelacmor/talks/blob/master/slides/TheWayWeThinkAboutChange.pdf" target="_blank">slides</a>.</p><p>Presented session <a href="https://github.com/isabelacmor/talks/blob/master/building-empathy-and-accessible-apps.md" target="_blank">Building empathy and accessible apps"</a>, with <a href="https://github.com/isabelacmor/talks/blob/master/slides/BuildingEmpathy.pdf" target="_blank">slides</a>.</p></>, 
         date: moment("2020-02-01").toDate(),
